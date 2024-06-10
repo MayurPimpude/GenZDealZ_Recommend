@@ -7,11 +7,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the models and data
 model = load_model('rnn_model.h5')
-with open('tokenizer.pkl', 'rb') as file:
+with open('./data/tokenizer.pkl', 'rb') as file:
     tokenizer = pickle.load(file)
-with open('item_sim_df.pkl', 'rb') as file:
+with open('./data/item_sim_df.pkl', 'rb') as file:
     item_sim_df = pickle.load(file)
-with open('user_item_data.pkl', 'rb') as file:
+with open('./data/user_item_data.pkl', 'rb') as file:
     user_item_data = pickle.load(file)
 
 # Define sequence length used in the RNN model
