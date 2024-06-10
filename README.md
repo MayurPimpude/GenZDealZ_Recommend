@@ -37,6 +37,8 @@ cd hybrid-recommendation-system
 
 pip install -r requirements.txt
 
+cd models
+
 python data.py
 ```
 ## Streamlit Application
